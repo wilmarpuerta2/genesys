@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
         // The user's URL was login.mypurecloud.com. Let's try mypurecloud.com first.
         // If sae1 is a specific region, we might need to adjust.
         // Using default mypurecloud.com for now.
-        client.setEnvironment('sae1.pure.cloud');
+        client.setEnvironment('mypurecloud.com');
 
         // We will just try to check if we are already logged in or if there is a hash
         client.loginImplicitGrant(CLIENT_ID, REDIRECT_URI, { state: 'state' })
